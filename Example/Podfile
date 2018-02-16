@@ -1,0 +1,6 @@
+use_frameworks!
+target 'DateWithoutTime_Tests' do
+  pod 'DateWithoutTime', :path => '../'
+  
+  
+end
