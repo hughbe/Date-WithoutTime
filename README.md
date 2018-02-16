@@ -1,15 +1,20 @@
 # DateWithoutTime
 
+A library that lets you get the date part only from a Swift Date object.
+
 [![CI Status](http://img.shields.io/travis/hughbe/DateWithoutTime.svg?style=flat)](https://travis-ci.org/hughbe/DateWithoutTime)
 [![Version](https://img.shields.io/cocoapods/v/DateWithoutTime.svg?style=flat)](http://cocoapods.org/pods/DateWithoutTime)
 [![License](https://img.shields.io/cocoapods/l/DateWithoutTime.svg?style=flat)](http://cocoapods.org/pods/DateWithoutTime)
 [![Platform](https://img.shields.io/cocoapods/p/DateWithoutTime.svg?style=flat)](http://cocoapods.org/pods/DateWithoutTime)
 
-## Example
+## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```swift
+import DateWithoutTime
 
-## Requirements
+let date = Date() // E.g 2018-02-16 12:26
+let dateWithoutTime = date.dateWithoutTime // E.g. 2018-02-16 00:00
+```
 
 ## Installation
 
@@ -19,11 +24,3 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'DateWithoutTime'
 ```
-
-## Author
-
-hughbe, hughbellars@gmail.com
-
-## License
-
-DateWithoutTime is available under the MIT license. See the LICENSE file for more info.
